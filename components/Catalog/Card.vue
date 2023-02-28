@@ -14,9 +14,9 @@
     </div>
 
     <div class="card__cardImg">
-      <img :src="banner" :alt="title" class="card__banner">
-      <img :src="banner" :alt="title" class="card__banner">
-      <img :src="banner" :alt="title" class="card__banner">
+      <img :src="banner" :alt="title" class="card__banner" />
+      <img :src="banner" :alt="title" class="card__banner" />
+      <img :src="banner" :alt="title" class="card__banner" />
     </div>
     <div class="card__bottom">
       <div class="card__text">
@@ -57,11 +57,6 @@ defineProps({
   display: block;
   text-decoration: none;
 
-  &__cardImg {
-    display: flex;
-    justify-content: space-between;
-    padding-bottom: 10px;
-  }
 
   &__banner {
     width: 120px;
@@ -71,7 +66,7 @@ defineProps({
   }
 
   &__title {
-    font-family: 'SF Pro Display';
+    font-family: "SF Pro Display";
     font-style: normal;
     font-weight: 700;
     font-size: 25px;
@@ -81,7 +76,7 @@ defineProps({
   }
 
   &__subtitle {
-    font-family: 'SF Pro Display';
+    font-family: "SF Pro Display";
     font-style: normal;
     font-weight: 700;
     font-size: 25px;
@@ -101,7 +96,7 @@ defineProps({
     display: flex;
     justify-content: center;
     gap: 3px;
-    font-family: 'SF Pro Display';
+    font-family: "SF Pro Display";
     font-style: normal;
     font-weight: 400;
     font-size: 15px;
@@ -111,7 +106,7 @@ defineProps({
   }
 
   &__comment {
-    font-family: 'SF Pro Display';
+    font-family: "SF Pro Display";
     font-style: normal;
     font-weight: 400;
     font-size: 17px;
@@ -126,6 +121,29 @@ defineProps({
     position: absolute;
     top: 22px;
     right: 0;
+  }
+  &__cardImg {
+    display: flex;
+    gap: 5px;
+    // justify-content: space-between;
+    padding-bottom: 5px;
+    overflow-y: auto;
+    ::-webkit-scrollbar {
+      width: 10px;
+    }
+
+    /* Track */
+    &::-webkit-scrollbar {
+      height: 0.4em;
+    }
+    &::-webkit-scrollbar-track {
+      box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.2);
+      border-radius: 5px;
+    }
+    &::-webkit-scrollbar-thumb {
+      background-color: #654321;
+      border-radius: 5px;
+    }
   }
 }
 </style>

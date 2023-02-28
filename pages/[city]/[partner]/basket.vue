@@ -135,7 +135,6 @@ try {
   LSBasketData = JSON.parse(
     localStorage.getItem("basket." + route.params.partner)
   );
-  console.log(LSBasketData);
 } catch (error) {
   navigateTo({
     name: "city-partner",

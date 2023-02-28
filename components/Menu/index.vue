@@ -11,26 +11,24 @@
 </template>
 
 <script setup>
-import { defineEmits } from "vue"
+import { defineEmits } from "vue";
 
-import MenuItem from "./Item"
+import MenuItem from "./Item";
 
-const { $api } = useNuxtApp()
+const { $api } = useNuxtApp();
 
-const {data:menuItems} = await
-  useAsyncData(() => $api.Category.getAll())
+const { data: menuItems } = await useAsyncData(() => $api.Category.getAll());
 
-const emit = defineEmits(['selectCategory'])
-const router = useRouter()
-const selectCategory = category => {
-  emit('selectCategory', category)
+const emit = defineEmits(["selectCategory"]);
+const router = useRouter();
+const selectCategory = (category) => {
+  emit("selectCategory", category);
   router.push({
     query: {
-      category
-    }
-  })
-}
-
+      category,
+    },
+  });
+};
 </script>
 
 <style lang="scss" scoped>
@@ -52,7 +50,7 @@ const selectCategory = category => {
     border-radius: 5px;
   }
   &::-webkit-scrollbar-thumb {
-    background-color: #20B56C;
+    background-color: #654321;
     border-radius: 5px;
   }
 }
