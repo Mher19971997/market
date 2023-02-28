@@ -1,0 +1,22 @@
+{
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "devDependencies": {
+    "nuxt": "^3.1.2",
+    "sass": "^1.32.7",
+    "sass-loader": "^12.0.0"
+  },
+  "dependencies": {
+    "@takuma-ru/vue-swipe-modal": "^4.0.7",
+    "@webzlodimir/vue-bottom-sheet": "^2.0.2",
+    "axios": "^1.3.3",
+    "bottom-sheet-vue3": "^2.0.3",
+    "fuzzysort": "^2.0.4"
+  }
+}

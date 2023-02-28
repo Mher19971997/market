@@ -1,0 +1,212 @@
+
+{
+  "citys": [
+    {
+      "name": "Учкекен",
+      "key": "uchkeken"
+    },
+    {
+      "name": "Черкесск",
+      "key": "cherkessk"
+    },
+    {
+      "name": "Нальчик",
+      "key": "nalchik"
+    }
+  ],
+  "cafes": [
+    {
+      "banner": "https://halaleda.ru/assets/bairam.webp",
+      "category": "sushi",
+      "title": "Байрам",
+      "cafeUrl": "http://halaleda.ru/uchkeken/sushibairam/",
+      "product": "sushibairam",
+      "subtitle": "От 500₽ доставка по Учкекену бесплатно",
+      "comment": "30 мин",
+      "rating": 5.0,
+      "marksNum": 10,
+      "recomendate": false,
+      "sale": false,
+      "city": "uchkeken"
+    },
+    {
+      "banner": "https://halaleda.ru/assets/kfc.webp",
+      "category": "fastfood",
+      "title": "KFC",
+      "cafeUrl": "http://halaleda.ru/cherkessk/kfc/",
+      "product": "kfc",
+      "subtitle": "От 150₽ доставка",
+      "comment": "30 мин",
+      "rating": 5.0,
+      "marksNum": 10,
+      "recomendate": false,
+      "sale": false,
+      "city": "cherkessk"
+    },
+    {
+      "banner": "https://halaleda.ru/assets/kentucky.webp",
+      "category": "fastfood",
+      "title": "Kentucky Food",
+      "cafeUrl": "http://halaleda.ru/cherkessk/kentuckyfood/",
+      "product": "kentuckyfood",
+      "subtitle": "От 90₽ доставка",
+      "comment": "30 мин",
+      "rating": 5.0,
+      "marksNum": 10,
+      "recomendate": false,
+      "sale": false,
+      "city": "cherkessk"
+    },
+    {
+      "banner": "http://halaleda.ru/cherkessk/barakatdoner/img/ban.webp",
+      "category": "fastfood",
+      "title": "Баракат Донер",
+      "cafeUrl": "http://halaleda.ru/cherkessk/barakatdoner/",
+      "product": "barakatdoner",
+      "subtitle": "От 50₽ доставка · От 500₽ Бесплатно",
+      "comment": "30 мин",
+      "rating": 5.0,
+      "marksNum": 10,
+      "recomendate": false,
+      "sale": false,
+      "city": "cherkessk"
+    },
+    {
+      "banner": "http://halaleda.ru/cherkessk/zizu/img/ban.webp",
+      "category": "fastfood",
+      "title": "Zizu",
+      "cafeUrl": "http://halaleda.ru/cherkessk/zizu/",
+      "product": "zizu",
+      "subtitle": "От 100₽ доставка",
+      "comment": "30 мин",
+      "rating": 5.0,
+      "marksNum": 10,
+      "recomendate": false,
+      "sale": false,
+      "city": "cherkessk"
+    },
+    {
+      "banner": "https://halaleda.ru/assets/tokyorim.webp",
+      "category": "sushi",
+      "title": "Токио Рим",
+      "cafeUrl": "http://halaleda.ru/cherkessk/tokyorim/",
+      "product": "tokyorim",
+      "subtitle": "70р доставка · От 1000 ₽ Бесплатно",
+      "comment": "30 мин",
+      "rating": 5.0,
+      "marksNum": 10,
+      "recomendate": false,
+      "sale": false,
+      "city": "cherkessk"
+    },
+    {
+      "banner": "https://halaleda.ru/assets/olddombay.webp",
+      "category": "sushi",
+      "title": "Старый Домбай",
+      "cafeUrl": "http://staryi-dombai.ru/",
+      "product": "",
+      "subtitle": "70р доставка · От 1000 ₽ Бесплатно",
+      "comment": "30 мин",
+      "rating": 5.0,
+      "marksNum": 10,
+      "recomendate": false,
+      "sale": false,
+      "city": "cherkessk"
+    },
+    {
+      "banner": "https://halaleda.ru/assets/kfc.webp",
+      "category": "fastfood",
+      "title": "KFC",
+      "cafeUrl": "http://kfc-nalchik.ru/kfc",
+      "product": "kfc",
+      "subtitle": "70р доставка · От 1000 ₽ Бесплатно",
+      "comment": "30 мин",
+      "rating": 5.0,
+      "marksNum": 10,
+      "recomendate": false,
+      "sale": false,
+      "city": "nalchik"
+    },
+    {
+      "banner": "https://halaleda.ru/nalchik/alanika/img/ban.webp",
+      "category": "fastfood",
+      "title": "Аланика",
+      "cafeUrl": "https://halaleda.ru/nalchik/alanika",
+      "product": "alanika",
+      "subtitle": "70р доставка · От 1000 ₽ Бесплатно",
+      "comment": "30 мин",
+      "rating": 5.0,
+      "marksNum": 10,
+      "recomendate": false,
+      "sale": false,
+      "city": "nalchik"
+    },
+    {
+      "banner": "https://halaleda.ru/assets/yaki.webp",
+      "category": "sushi",
+      "title": "Sushi-Yaki",
+      "cafeUrl": "http://halaleda.ru/uchkeken/sushiyaki",
+      "product": "sushiyaki",
+      "subtitle": "От 800₽ доставка по Учкекену бесплатно",
+      "comment": "30 мин",
+      "rating": 5.0,
+      "marksNum": 10,
+      "recomendate": false,
+      "sale": false,
+      "city": "uchkeken"
+    },
+    {
+      "banner": "https://halaleda.ru/assets/pizzelia.webp",
+      "category": [
+        "pizza"
+      ],
+      "title": "Пиццилия",
+      "cafeUrl": "http://halaleda.ru/uchkeken/pizzilia/",
+      "product": "pizzilia",
+      "subtitle": "От 800₽ доставка по Учкекену бесплатно",
+      "comment": "30 мин",
+      "rating": 5.0,
+      "marksNum": 10,
+      "recomendate": false,
+      "sale": false,
+      "city": "uchkeken"
+    }
+  ],
+  "categories": [
+    {
+      "name": "Суши",
+      "img": "https://halaleda.ru/assets/sushi.webp",
+      "key": "sushi"
+    },
+    {
+      "name": "Пицца",
+      "img": "https://halaleda.ru/assets/pizza.webp",
+      "key": "pizza"
+    },
+    {
+      "name": "Выпечка",
+      "img": "https://halaleda.ru/assets/bakery.webp",
+      "key": "bakery"
+    },
+    {
+      "name": "Десерты",
+      "img": "https://halaleda.ru/assets/sweet.webp",
+      "key": "sweets"
+    },
+    {
+      "name": "Кофе",
+      "img": "https://halaleda.ru/assets/coffee.webp",
+      "key": "coffee"
+    },
+    {
+      "name": "Замророзка",
+      "img": "https://halaleda.ru/assets/cold.webp",
+      "key": "cold"
+    },
+    {
+      "name": "Домашняя",
+      "img": "https://halaleda.ru/assets/home.webp",
+      "key": "home"
+    }
+  ]
+}
