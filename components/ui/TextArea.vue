@@ -56,6 +56,7 @@ function updateValue(event) {
     color: #545454;
     display: flex;
     margin: 10px 0;
+    height: 30px;
 
     &__icon {
         margin-bottom: -4px;
