@@ -1,22 +1,51 @@
 <template>
   <div>
-    <m-button
-      @click="showModal = !showModal"
-      class="footer-btn"
-    >
-      Хочу разместить заведение
+    <m-button @click="showModal = !showModal" class="footer-btn">
+      <img src="/fi_edit-3.png" alt="">
+      | Опубликовать объявление
     </m-button>
-    <swipe-modal
-      v-model="showModal"
-      border-top-radius="16px"
-      class="footer-modal"
-    >
+    <div v-if="showModal" class="footer-modal">
       <form action="#" @submit="sendRequest" class="footer-modal__form footer-form">
-        <div class="footer-form__title">Хочу разместить заведение</div>
-        <m-input v-model="cafeName" class="footer-form__input footer-form__element" placeholder="Название вашего кафе" required />
-        <m-button type="submit" class="footer-form__send footer-form__element">Отправить заявку</m-button>
+        <div class="footer-form__title">Добавить объявление</div>
+        <div>
+          <span>Название</span>
+          <m-input v-model="cafeName" class="footer-form__input footer-form__element" placeholder="Название объявления"
+            required />
+        </div>
+        <div>
+          <span>Категория</span>
+          <m-dropdown v-model="cafeName" class="footer-form__input footer-form__element" placeholder="Выберите категорию"
+            required />
+        </div>
+        <div>
+          <span>Описание</span>
+          <m-textarea aria-placeholder="Введите описание"></m-textarea>
+        </div>
+        <div>
+          <span>Фото</span>
+          <m-file v-model="cafeName" class="footer-form__input footer-form__element" placeholder="Выберите категорию"
+            required />
+        </div>
+        <div class="footer-form__price_locat">
+          <div>
+            <span>Цена</span>
+            <m-input v-model="cafeName" class="footer-form__input footer-form__element" placeholder="Цена" type="number"
+              required />
+          </div>
+          <div>
+            <span>Местоположение</span>
+            <m-input v-model="cafeName" class="footer-form__input footer-form__element" placeholder="Местоположение"
+              required />
+          </div>
+        </div>
+        <div>
+          <span>Телефон c WhatsApp </span>
+          <m-input v-model="cafeName" class="footer-form__input footer-form__element" placeholder="+79283550302"
+            type="number" required />
+        </div>
+        <m-button type="submit" class="footer-form__send footer-form__element">Опубликовать</m-button>
       </form>
-    </swipe-modal>
+    </div>
   </div>
 </template>
 
@@ -24,6 +53,9 @@
 import { ref } from 'vue'
 import MButton from "@/components/ui/Button"
 import MInput from "@/components/ui/Input"
+import MDropdown from "@/components/ui/Dropodown"
+import MTextarea from "@/components/ui/TextArea"
+import MFile from "@/components/ui/File"
 
 
 const showModal = ref(false)
@@ -48,24 +80,47 @@ const sendRequest = e => {
 <style lang="scss" scoped>
 .footer-btn {
   width: 100%;
+  color: #D9D9D9;
+  font-family: 'SF Pro Display';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  display: flex;
+  cursor: text;
+  background-color: #FFFF;
 }
+
 .footer-modal {
+  width: 430px !important;
+
   &__form {
     padding: 0 15px;
   }
 }
+
 .footer-form {
+  
+  &__price_locat {
+    display: flex;
+    justify-content: space-between;
+  }
+
   &__title {
     font-weight: 500;
     text-align: center;
     font-size: 24px;
     padding: 10px 0;
   }
+
   &__element {
     margin: 10px 0;
   }
+
   &__send {
     width: 100%;
+    background-color: #654321;
   }
+
 }
 </style>

@@ -3,7 +3,7 @@
     <app-header class="header root__header" />
     <catalog />
     <slot />
-    <!-- <app-footer class="footer root__footer" /> -->
+    <app-footer class="footer root__footer" />
   </div>
 </template>
 
@@ -19,6 +19,6 @@ import Catalog from "@/components/Catalog/";
 }
 
 .footer {
-  padding: 15px 0;
+  background-color: #FFFF;
 }
 </style>
